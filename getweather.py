@@ -4,7 +4,7 @@ import os
 TOKEN = os.getenv('TOKEN')
 CITY =  os.getenv('CITY')
 SUCCESS_CODE = 200
-
+#new comment
 try:
     request = requests.get('https://api.openweathermap.org/data/2.5/weather?q=' + CITY + '&appid=' + TOKEN)
     if request.status_code == SUCCESS_CODE:
